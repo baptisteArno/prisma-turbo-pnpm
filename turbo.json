@@ -9,6 +9,13 @@
       "outputs": []
     },
     "dev": {
+      "dependsOn": ["^dev", "db#db:generate", "db#db:push"],
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:push": {
       "cache": false
     }
   }

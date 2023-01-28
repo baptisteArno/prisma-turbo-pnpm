@@ -7,13 +7,13 @@
     "packages/*"
   ],
   "scripts": {
+    "docker:up": "docker compose -f docker-compose.yml up -d && sleep 5",
+    "dev": "pnpm docker:up && turbo run dev --parallel",
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },
