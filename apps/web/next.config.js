@@ -1,4 +1,5 @@
 const path = require("path");
+const { PrismaPlugin } = require("experimental-prisma-webpack-plugin");
 
 module.exports = {
   output: "standalone",
@@ -9,7 +10,7 @@ module.exports = {
   },
   webpack: (config, { isServer }) => {
     if (isServer) {
-      config.externals = [...config.externals, "@prisma/client"];
+      config.plugins = [...config.plugins, new PrismaPlugin()];
     }
 
     return config;

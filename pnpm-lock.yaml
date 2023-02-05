@@ -17,6 +17,7 @@ importers:
       '@types/react': ^18.0.22
       '@types/react-dom': ^18.0.7
       db: workspace:*
+      experimental-prisma-webpack-plugin: ^0.0.3
       next: ^13.1.1
       react: 18.2.0
       react-dom: 18.2.0
@@ -32,6 +33,7 @@ importers:
       '@types/node': 17.0.45
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
+      experimental-prisma-webpack-plugin: 0.0.3
       tsconfig: link:../../packages/tsconfig
       typescript: 4.9.4
 
@@ -538,6 +540,10 @@ packages:
   /escape-string-regexp/1.0.5:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
+
+  /experimental-prisma-webpack-plugin/0.0.3:
+    resolution: {integrity: sha512-xKxrww0MZaVG9zTeT8bSnQ+uASwayGtfa82hZfQjmTu3OGqF4/LrN8+BUYhV4OTWBhSWyGBYC2h2L00s2ZCUEw==}
+    dev: true
 
   /gensync/1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
