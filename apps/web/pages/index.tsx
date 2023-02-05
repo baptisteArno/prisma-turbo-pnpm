@@ -5,6 +5,7 @@ export default function Web() {
 
   const handleClick = async () => {
     const response = await fetch("/api/posts");
+    await fetch("/api/another/hi");
     try {
       const data = await response.json();
       setData(data);
